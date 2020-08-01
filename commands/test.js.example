@@ -1,0 +1,24 @@
+const Command = require("../base/Command.js");
+
+
+
+
+class Test extends Command {
+  constructor(client) {
+    super(client, {
+      name: "test",
+      description: "Gives some useful bot statistics.",
+      usage: "test",
+      aliases: ["test"],
+      permLevel: "Bot Owner",
+    });
+  }
+
+  async run(message, level) { // eslint-disable-line no-unused-vars
+
+    
+    
+  }
+}
+
+module.exports = Test;
